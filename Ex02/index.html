@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-right: 20px;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .container {
+            display: flex;
+            flex-direction: column-reverse; 
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        @media(min-width: 768px) {
+            .container {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: center;
+                padding: 40px;
+            }
+            .container div {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="our_program.html">Our Program</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div>
+            <h2>Welcome to Cat School!</h2>
+            <p>
+                At Cat School, we believe every feline deserves the finest education! <br>
+                Our goal is to train cats to be the best versions of themselves. <br>
+                Whether your cat wants to learn new tricks, improve their agility, <br>
+                or simply enhance their napping skills, we've got it all covered.<br>
+                Join us and watch your cat become the smartest (and laziest) in the neighborhood!
+            </p>
+        </div>
+        <div>
+            <img src="picture_using/pic01.jpg" alt="Cat_home_page">
+        </div>
+    </div>
+</body>
+</html>
